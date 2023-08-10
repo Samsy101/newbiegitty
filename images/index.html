@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sam Fitness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Anton', sans-serif;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url(/images/newbgsam.jpg);
+    }
+
+    .left {
+      position: absolute;
+      left: 34px;
+      top: 20px;
+      display: inline-block;
+      /* border: 2px solid red; */
+    }
+
+    .mid {
+      display: block;
+      width: 36%;
+      margin: 2px auto;
+      font-size: 30px;
+      top: 24px;
+      /* border: 2px solid green; */
+    }
+
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 34px;
+      display: inline-block;
+      /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+      display: inline-block;
+    }
+
+    .navbar li {
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 7px 10px;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    .left img {
+      width: 85px;
+      filter: invert(100%);
+    }
+
+    .left div {
+      line-height: 6px;
+      font-size: 17px;
+      text-align: center;
+      color: white;
+      /* background-color: rgb(95, 93, 93); */
+    }
+
+    .btn {
+      margin: 0px 9px;
+      background-color: black;
+      color: white;
+      font-family: 'Anton', sans-serif;
+      padding: 4px 14px;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: rgb(82, 80, 80);
+    }
+
+    .container {
+      border: 2px solid green;
+      border-radius: 10px;
+      margin: 77px 422px;
+      padding: 36px 10px;
+      width: 33%;
+    }
+
+    .container h1 {
+      font-size: 25px;
+      color: rgb(174, 252, 64);
+    }
+
+    .form-group input {
+      font-family: 'Anton', sans-serif;
+      display: block;
+      width: 390px;
+      margin: 4px auto;
+      padding: 2px;
+      font-size: 15px;
+      text-align: center;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+
+    .container button {
+      display: block;
+      width: 390px;
+      margin: 4px auto;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="header">
+    <!-- this is left logo -->
+    <div class="left">
+      <img src="/images/gymlogo.jpg" alt="">
+      <div>Sam Fitness</div>
+    </div>
+    <!-- this is mid navbar-->
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#active">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Fitness Trainers</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+    <!-- this is right button -->
+    <div class="right">
+      <button class="btn">Call us</button>
+      <button class="btn">Email us</button>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Join the best gym of Muzaffarpur now</h1>
+    <form action="noaction.php">
+      <div class="form-group">
+        <input type="text" placeholder="Enter your Name">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Enter your gender">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Enter your locality">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Enter your weight">
+      </div>
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
